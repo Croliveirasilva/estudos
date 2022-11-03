@@ -9,22 +9,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <img class="wave" src="img/wave.png" alt="Forma amarela tipo nuvem" />
+  <img class="waveRegister" src="img/waveRegister.png" alt="Forma amarela tipo nuvem" />
   <div class="container">
-    <div class="img">
-      <img src="img/bg.svg" alt="Avatar representando usuário do sistema" />
-    </div>
-    <div class="login-content">
-      <form action="index.html">
-        <img class="avatar" src="img/avatar.svg" alt="Avatar representando usuário do sistema" />
+   
+    <div class="login-contentRegister">
+     
+      <form method="POST" >
+        
+        <img class="avatar" src="img/biyoMeLogoPadrao.svg" alt="Avatar representando usuário do sistema" />
         <h2>Seja Bem-vindo</h2>
         <div class="input-div one">
           <div class="i">
             <i class="fas fa-user"></i>
           </div>
           <div class="div">
-            <h5>Usuario</h5>
-            <input type="text" class="input">
+            <h5>E-mail</h5>
+            <input type="email" name="email" class="input">
           </div>
         </div>
         <div class="input-div pass">
@@ -33,12 +33,15 @@
           </div>
           <div class="div">
             <h5>Senha</h5>
-            <input type="password" class="input">
+            <input type="password" name="password"  class="input">
           </div>
         </div>
         <a href="#">Esqueci Minha Senha</a>
-        <input type="submit" class="btn" value="Login">
+        <input type="submit"  class="btn" value="Entrar">
       </form>
+    </div>
+    <div class="imgRegister">
+      <img src="img/bgRegister.svg" alt="Avatar representando usuário do sistema" />
     </div>
   </div>
   <script type="text/javascript" src="js/main.js"></script>

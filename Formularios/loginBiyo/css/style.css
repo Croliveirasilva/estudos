@@ -14,6 +14,15 @@ body{
   height:100%;
   z-index:-1;
 }
+
+.waveRegister{
+  position:fixed;
+  top:0;
+  right:0;
+  height:100%;
+  z-index:-1;
+
+}
 .container{
   width:100vw;
   height:100vh;
@@ -27,11 +36,26 @@ body{
   display:flex;
   justify-content:flex-end;
   align-items:center;
+}
 
+.imgRegister{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+
+}
+.imgRegister img{
+  width:600px;
 }
 .login-content{
   display:flex;
   justify-content:flex-start;
+  align-items:center;
+  text-align:center;
+}
+.login-contentRegister{
+  display:flex;
+  justify-content:flex-end;
   align-items:center;
   text-align:center;
 }
@@ -154,13 +178,14 @@ a:hover{
   border-radius:18px;
   border:none;
   outline:none;
-  font-size:1.2rem;
+  font-size:18px;
   background-color:#F9A826;
   color:#ffffff;
   font-family:'Poppins',sans-serif;
   text-transform:uppercase;
   margin:1rem 0;
   transition: .5s;
+  cursor:pointer;
 
 }
 .btn:hover {
@@ -186,6 +211,9 @@ a:hover{
   .img img{
     width:400px;
   }
+  .imgRegister img{
+    width:500px;
+  }
 }
 @media screen and (max-width:900px){
   .container{
@@ -196,7 +224,13 @@ a:hover{
   .img{
     display:none;
   }
+  .imgRegister{
+    display:none;
+  }
   .wave{
+    display:none;
+  }
+  .waveRegister{
     display:none;
   }
   .login-content{
